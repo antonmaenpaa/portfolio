@@ -1,0 +1,117 @@
+@media (max-width: 50em) {
+
+
+
+    .desktop-item {
+        display: none;
+    }
+
+    .mobile-item {
+        display: unset;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        cursor: pointer;
+        z-index: 1000;
+        color: black;
+    }
+
+    .mobile-item:hover {
+        color: tomato;
+    }
+
+    #close-menu {
+        float: right;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        display: unset;
+        cursor: pointer;
+        color: white;
+    }
+
+    #close-menu:hover {
+        color: tomato;
+    }
+
+    .burger-menu {
+        border-bottom: .1rem solid black;
+        width: 1rem;
+        margin: .3rem 0 0 0;
+    }
+
+
+    .social-media {
+        width: 1.5rem;
+    }
+
+    .social-container {
+        width: 15rem;
+    }
+
+    .sideBar {
+
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        display: block;
+        background-color: black;
+        height: 100rem;
+        transition: width 300ms;
+        width: 0;
+        overflow: hidden;
+
+    }
+
+    .mobile-nav {
+        width: 15rem;
+        height: 20rem;
+    }
+
+    .sidebar-item {
+        display: unset;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .sidebar-item a {
+        color: white;
+        font-family: 'Syne Mono', monospace;
+    }
+
+    .sidebar-item a:hover {
+        color: tomato;
+    }
+
+    li {
+        margin: 0 0 1rem 0;
+    }
+
+    ul {
+        margin: 0;
+    }
+
+
+    
+
+    /* main content */
+
+    .background {
+        background-image: url(../pictures/wallpaper-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: auto;
+    
+    }
+    main {
+        min-height: 100vh;
+    }
+    .name {
+        margin-top: 9rem
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

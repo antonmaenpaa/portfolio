@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'helvetica', sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.background {
+    background-image: url(../pictures/wallpaper-desktop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+
+}
+
+
+/* Navbar */
+
+
+.material-icons {
+    color: white;
+}
+.material-icons:hover {
+    color: tomato;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+}
+
+#close-menu {
+    display: none;
+}
+
+ul {
+    margin: 1rem 2rem 0 0;
+    list-style-type: none;
+}
+
+li {
+    font-family: 'helvetica', sans-serif;
+    
+}
+
+nav {
+    width: 20rem;
+    
+
+}
+
+img {
+    margin: 1rem 0 0 2rem;
+    width: 2rem;
+}
+
+.mobile-item {
+    display: none;
+}
+
+.desktop-item a:hover,
+.desktop-item a:active {
+    font-size: 150%;
+}
+
+.desktop-item a{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Syne Mono', monospace;
+}
+
+.sidebar-item {
+    display: none;
+}
+
+
+
+/* Main content */
+
+main {
+    min-height: 90vh;
+    margin-top: -1rem;
+    align-items: flex-end;
+
+    
+}
+
+.button-area {
+    margin-bottom: 3rem;
+
+}
+
+.button {
+    
+    background: tomato;
+    border-radius: 2rem;
+    padding: .7rem 3rem;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+div.button:hover {
+    background: white;
+    border-radius: 2rem;
+}
+
+img.social-media:hover {
+    opacity: 0.3;
+}
+
+.name {
+    width: 70%;
+    height: auto;
+}
+
+/* About me */
+
+.about {
+
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.infoMe {
+    width: auto;
+    margin: 0 4rem;
+}
+
+p {
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+
+/* Reuseable classes */
+
+.flex {
+    display: flex;
+}
+.space-between {
+    justify-content: space-between;
+}
+.center {
+    align-items: center;
+    
+}
+
+.column {
+    flex-direction: column;
+}
+
+.centerHorizontal {
+    justify-content: center;
+}
+
+
