@@ -40,7 +40,14 @@ header {
     left: 0;
     right: 0;
     top: 0;
+    height: 3rem;
     
+}
+
+.header-black {
+    background: black;
+    transition: all 2000ms ease-in-out;
+    height: 3rem;
 }
 
 #close-menu {
@@ -50,6 +57,7 @@ header {
 ul {
     margin: 1rem 2rem 0 0;
     list-style-type: none;
+    width: 20rem;
 }
 
 li {
@@ -57,14 +65,20 @@ li {
     
 }
 
+.social-container {
+    height: 3rem;
+}
+
 nav {
     width: 20rem;
+    height: 3rem;
+    margin-right: 1.5rem;
     
 
 }
 
 img {
-    margin: 1rem 0 0 2rem;
+    margin: 0.1rem 0 0 1.5rem;
     width: 2rem;
 }
 
@@ -72,9 +86,12 @@ img {
     display: none;
 }
 
-.desktop-item a:hover,
-.desktop-item a:active {
-    font-size: 150%;
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
 }
 
 .desktop-item a{
@@ -93,7 +110,7 @@ img {
 
 main {
     min-height: 90vh;
-    margin-top: -1rem;
+    margin-top: -3rem;
     align-items: flex-end;
 
     
@@ -133,7 +150,6 @@ img.social-media:hover {
 /* About me */
 
 .about {
-    min-height: 90vh;
     margin-top: 2rem;
     width: 100%;
 }
@@ -171,6 +187,11 @@ p {
 
 .centerHorizontal {
     justify-content: center;
+}
+
+.full-height {
+    min-height: 100vh;
+
 }
 
 
