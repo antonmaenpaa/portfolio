@@ -1,15 +1,28 @@
+window.addEventListener('load', main);
 
-const openMenu = document.getElementById('menu');
-let sideBlock = document.getElementById('sideMenu');
-
-const closeMenu = document.getElementById('close-menu');
-
-openMenu.onclick = function() {
-    sideBlock.style.width = '15rem';
-
+function main() {
+    addEventListeners();
 }
 
-closeMenu.onclick = function() {
+function addEventListeners() {
+
+    const openMenu = document.getElementById('menu');
+    const closeMenu = document.getElementById('close-menu');
+    
+    openMenu.onclick = openBlock;
+    closeMenu.onclick = closeBlock;
+}
+
+function openBlock() {
+    let sideBlock = document.getElementById('sideMenu');
+    sideBlock.style.width = '15rem';
+}
+
+
+function closeBlock() {
+    let sideBlock = document.getElementById('sideMenu');
     sideBlock.style.width = '0';
 }
+
+
 
