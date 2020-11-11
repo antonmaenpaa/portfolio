@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="./css/desktop.css">
     <link rel="stylesheet" href="./css/mobile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <link href="https://www.fontzip.com/storage/2018/02/16/linoleo-script/webfonts/Linoleo Script.css"
+        rel="stylesheet" />
     <script defer src="./javascript/script.js"></script>
     <title>Portfolio</title>
 </head>
@@ -16,33 +17,33 @@
 
     <header class="flex center space-between">
         <div class="social-container flex center">
-            <a target="_blank" href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/">
+            <a target="_blank" href="https://github.com/antonmaenpaa">
                 <img class="social-media" src="../pictures/github.png">
             </a>
             <a target="_blank" href="https://instagram.com/antonmaenpaa">
                 <img class="social-media" src="../pictures/instagram.png">
             </a>
-            <a target="_blank" href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/">
+            <a target="_blank"
+                href="https://www.linkedin.com/in/anton-m%C3%A4enp%C3%A4%C3%A4-6124b4190/?challengeId=AQGjfdES4MDlSgAAAXWsHfqDDXRwpdZlGmciKjHlzpA_OpujooE-ipronHqfMWs52C-y0gRKFFZyhjsEdynHN0e3IL4rxczZtQ&submissionId=7c00af63-8cc9-4516-08e3-a3daf072ff1f">
                 <img class="social-media" src="../pictures/linkedin.png">
             </a>
 
         </div>
-        <!--<h1>ANTON MÄENPÄÄ</h1-->
+
         <nav>
             <ul class="flex center space-between">
                 <li class="desktop-item grow"><a href="#home">Home.</a></li>
                 <li class="desktop-item grow"><a href="#aboutme">About.</a></li>
                 <li class="desktop-item grow"><a href="#portfolio">Projects.</a></li>
                 <li class="desktop-item grow"><a href="#contact">Contact.</a></li>
-
             </ul>
         </nav>
+
         <div class="mobile-item">
             <i id="menu" class="material-icons">
                 menu
             </i>
         </div>
-
 
     </header>
     <div id="sideMenu" class="sideBar">
@@ -55,48 +56,94 @@
                 <li class="sidebar-item"><a href="#aboutme">About.</a></li>
                 <li class="sidebar-item"><a href="#portfolio">Projects.</a></li>
                 <li class="sidebar-item"><a href="#contact">Contact.</a></li>
-
-
             </ul>
         </nav>
     </div>
+
     <main id="home" class="flex centerHorizontal background full-height">
-
-
         <div class="button-area">
-            <a href="#">
+            <a href="#aboutme">
                 <span class="material-icons">
                     arrow_downward
                 </span>
             </a>
         </div>
-
     </main>
 
     <div id="aboutme" class="about flex center centerHorizontal column full-height">
         <div class="infoMe flex centerHorizontal column center">
-            <h2>Aboutme.</h2>
+            <div class="flex mobile-column">
+                <div class="img-me-div">
+                    <img src="../pictures/me.jpg" class="picOfMe" alt="" srcset="">
+                </div>
+                <div class="info-me-text flex center column centerHorizontal">
+                    <h2 class="aboutme-h2">Hi! Im Anton</h2>
+                    <p>
+                        I’m a guy who is into web development and web design. I am currently studying to
+                        become a frontend developer in
+                        Gothenburg, Sweden.
+                        <br><br>
+                        I'm always up for new challenges and i really enjoy writing code and come up with nice and
+                        smooth designs.
+                        I strive to write elegant and efficient code, whether is HTML, CSS or JAVASCRIPT.
+                        <br><br>
+                        When i'm not coding you'll find me in the gym, or exploring beautiful beaches around the world.
 
-            <p>
-                Hi, I’m Anton. I’m a guy who is into web development and web design. I am based up in the north,
-                Finland.
-                But not to forget, we got this amazing thing called internet which makes distance no biggie. Does not
-                matter
-                if you are based on the other side of the world, if you want a cool webpage, or help building your
-                webshop,
-                I’m here for you.
-            </p>
+
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="portfolio" class="about flex center centerHorizontal column full-height">
 
-        <h2>Portfolio.</h2>
+    <div id="portfolio" class="flex center column full-height">
+        <div class="flex portfolio-div mobile-column">
+            <a class="a-project" target="_blank" href="https://antonmaenpaa.github.io/date-time/">
+                <div class="project-one flex center centerHorizontal">
+                    <h2>Date-time</h2>
+
+                </div>
+            </a>
+            <a class="a-project" target="_blank" href="https://antonmaenpaa.github.io/lab-ett/">
+                <div class="project-two flex center centerHorizontal">
+                    <h2>Text-based JS game</h2>
+
+                </div>
+            </a>
+            <a class="a-project" target="_blank" href="https://antonmaenpaa.github.io/img-slideshow/">
+                <div class="project-three flex center centerHorizontal">
+                    <h2>Image slideshow</h2>
+                </div>
+            </a>
+        </div>
     </div>
 
-    <div id="contact" class="about flex center centerHorizontal column full-height">
-
-        <h2>Contact.</h2>
+    <div id="contact" class="contact-div flex center centerHorizontal column full-height">
+        <div class="flex mobile-column center centerHorizontal">
+            <div class="flex column center centerHorizontal">
+                <h2 class="contact-h2">Get in touch</h2>
+                <p>Send me an email if you just want to say hi, or if you have some business enquiries.
+                    Also, check out my socials!
+                </p>
+                <p>Email: antonmaenpaa@gmail.com</p>
+            </div>
+            <div>
+                <img class="palm-img" src="./pictures/plam-tree.jpeg" alt="" srcset="">
+            </div>
+        </div>
     </div>
+
+    <footer class="flex space-between center">
+        <div class="footer-links flex space-around">
+            <a href="http://">Github</a>
+            <a href="http://">Instagram</a>
+            <a href="http://">Linkedin</a>
+            
+        </div>
+        <div>
+            &copy; AM2020
+        </div>
+    </footer>
 
 </body>
 
