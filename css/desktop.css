@@ -152,7 +152,7 @@ img.social-media:hover {
 }
 
 .infoMe {
-    margin: 0 4rem;
+    margin: 0 4rem 4rem 4rem;
     width: auto;
     text-align: center;
     
@@ -164,11 +164,12 @@ img.social-media:hover {
 }
 
 p {
-    padding: 2rem 2rem 2rem 3rem;
+    padding: 2rem 0 2rem 3rem;
     font-size: 1.5rem;
 }
 
 .picOfMe {
+    margin: 4rem 0 0 0;
     width: 100%;
     height: auto;
 

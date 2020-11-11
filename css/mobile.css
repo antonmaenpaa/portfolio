@@ -127,6 +127,7 @@
 
     .picOfMe {
         padding: 1rem 0 0 0;
+        width: 20rem;
     }
 
     .aboutme-h2 {
@@ -160,6 +161,9 @@
 
     .palm-img {
         padding: 0;
+        width: 20rem;
+
+        
     }
 
     .contact-h2 {
