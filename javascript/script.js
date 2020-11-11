@@ -2,7 +2,6 @@ window.addEventListener('load', main);
 
 function main() {
     addEventListeners();
-    scrolling();
 }
 
 function addEventListeners() {
@@ -10,26 +9,26 @@ function addEventListeners() {
     const openMenu = document.getElementById('menu');
     const closeMenu = document.getElementById('close-menu');
 
-    openMenu.onclick = openBlock;
-    closeMenu.onclick = closeBlock;
-    window.onscroll = scrolling;
+    openMenu.onclick = openSideBar;
+    closeMenu.onclick = closeSideBar;
+    window.onscroll = changeHeaderBgOnScroll;
 }
 
-function openBlock() {
+function openSideBar() {
     let sideBlock = document.getElementById('sideMenu');
     sideBlock.style.width = '15rem';
 }
 
 
-function closeBlock() {
+function closeSideBar() {
     let sideBlock = document.getElementById('sideMenu');
     sideBlock.style.width = '0';
 }
 
-function scrolling() {
+function changeHeaderBgOnScroll() {
     const headerBlock = document.querySelector('header');
     let top = window.scrollY;
-    if (top >= 568) {
+    if (top >= 600) {
         headerBlock.classList.add('header-black');
         
     } else {
