@@ -7,6 +7,10 @@
         width: 20rem;
     }
 
+    .aboutme-h2 {
+        padding: 2rem 0 1rem 0;
+    }
+
     /* Portfolio */
 
     .project-one {
@@ -32,6 +36,10 @@
     .palm-img {
         padding: 0;
         width: 20rem;
+    }
+
+    .contact-h2 {
+        padding: 4rem 0 0 0;
     }
 
     /* Resuseable classes */
