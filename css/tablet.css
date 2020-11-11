@@ -1,0 +1,32 @@
+@media (max-width: 62em) {
+
+    /* About me */
+
+    .picOfMe {
+        padding: 1rem 0 0 0;
+        width: 20rem;
+    }
+
+ 
+
+
+    /* Contact */
+
+    .palm-img {
+        padding: 0;
+        width: 20rem;
+    }
+
+    /* Resuseable classes */
+
+    p {
+        font-size: 1rem;
+        padding: 0 0 3rem 0;
+        line-height: 1.5rem;
+    }
+
+    .tablet-column {
+        flex-direction: column;
+    
+    }
+}
