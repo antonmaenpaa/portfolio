@@ -7,7 +7,24 @@
         width: 20rem;
     }
 
- 
+    /* Portfolio */
+
+    .project-one {
+        background: url('../pictures/date-time.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    
+    }
+    .project-two {
+        background: url('../pictures/taxet-based-game.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .project-three {
+        background: url('../pictures/img-slideshow.jpg') no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
 
 
     /* Contact */
