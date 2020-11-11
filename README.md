@@ -1,3 +1,3 @@
 # MY PORTFOLIO
 
-## Link to my portfoio [HERE](https://antonmaenpaa.github.io/portfolio)
+## Link to my portfolio [HERE](https://antonmaenpaa.github.io/portfolio)
