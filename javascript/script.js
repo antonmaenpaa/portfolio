@@ -4,6 +4,7 @@ function main() {
     addEventListeners();
 }
 
+/** Adds all addventliseteners in one function  */
 function addEventListeners() {
 
     const openMenu = document.getElementById('menu');
@@ -19,27 +20,34 @@ function addEventListeners() {
     sideLinks3.onclick = closeSideBarWithLinks;
     openMenu.onclick = openSideBar;
     closeMenu.onclick = closeSideBar;
+
     
-    window.onscroll = changeHeaderBgOnScroll;
+    window.addEventListener('scroll', changeHeaderBgOnScroll);
+  
 }
 
+/** Function that open sidebar onclick */
 function openSideBar() {
     let sideBlock = document.getElementById('sideMenu');
     sideBlock.style.width = '15rem';
 }
 
-
+/** Function that close sidebar onclick */
 function closeSideBar() {
     let sideBlock = document.getElementById('sideMenu');
     sideBlock.style.width = '0';
 
 }
 
+/** Function that close sidebar onclick on sidebar links */
 function closeSideBarWithLinks() {
     let sideBlock = document.getElementById('sideMenu');
     sideBlock.style.width = '0';
 }
 
+
+
+/** Fade in header background to black when scrollY is on height 600 */
 function changeHeaderBgOnScroll() {
     const headerBlock = document.querySelector('header');
     let top = window.scrollY;
