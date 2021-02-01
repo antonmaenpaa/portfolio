@@ -8,7 +8,7 @@ function main() {
 function addEventListeners() {
 
     const openMenu = document.getElementById('menu');
-    const closeMenu = document.getElementById('close-menu');
+    // const closeMenu = document.getElementById('close-menu');
     const sideLinks = document.getElementById('close');
     const sideLinks1 = document.getElementById('close1');
     const sideLinks2 = document.getElementById('close2');
@@ -18,8 +18,8 @@ function addEventListeners() {
     sideLinks1.onclick = closeSideBarWithLinks;
     sideLinks2.onclick = closeSideBarWithLinks;
     sideLinks3.onclick = closeSideBarWithLinks;
-    openMenu.onclick = openSideBar;
-    closeMenu.onclick = closeSideBar;
+    openMenu.onclick = openCloseSideBar;
+    // closeMenu.onclick = closeSideBar;
 
     
     window.addEventListener('scroll', changeHeaderBgOnScroll);
@@ -27,17 +27,22 @@ function addEventListeners() {
 }
 
 /** Function that open sidebar onclick */
-function openSideBar() {
-    let sideBlock = document.getElementById('sideMenu');
-    sideBlock.style.width = '15rem';
+function openCloseSideBar() {
+    let sideBlock = document.getElementById('sideBar');
+    if(sideBlock.style.width === 0 +'%') {
+        sideBlock.style.width = 50 +'%';
+
+    } else {
+        sideBlock.style.width = 0 +'%';
+    }
 }
 
 /** Function that close sidebar onclick */
-function closeSideBar() {
-    let sideBlock = document.getElementById('sideMenu');
-    sideBlock.style.width = '0';
+// function closeSideBar() {
+//     let sideBlock = document.getElementById('sideMenu');
+//     sideBlock.style.width = '0';
 
-}
+// }
 
 /** Function that close sidebar onclick on sidebar links */
 function closeSideBarWithLinks() {

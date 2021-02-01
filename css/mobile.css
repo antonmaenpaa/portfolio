@@ -2,6 +2,14 @@
 
     /* Navbar */
 
+    header {
+        z-index: 400;
+    }
+
+    .ul-mobile {
+        width: 100%;
+    }
+
     nav {
         display: none;
     }
@@ -12,15 +20,18 @@
 
     .mobile-item {
         display: unset;
-        margin-right: 1rem;
-        margin-top: 0.4rem;
+
         cursor: pointer;
         z-index: 1000;
-        color: black;
+        /* color: black; */
     }
 
     .mobile-item:hover {
         color: tomato;
+    }
+    #menu {
+        z-index: 1000;
+        color: white;
     }
 
     #close-menu {
@@ -51,7 +62,7 @@
         width: 15rem;
     }
 
-    .sideBar {
+    #sideBar {
         position: fixed;
         z-index: 1;
         top: 0;
@@ -60,14 +71,14 @@
         background-color: black;
         height: 100rem;
         transition: width 300ms;
-        width: 0;
+        width: 0%;
         overflow: hidden;
 
     }
 
     .mobile-nav {
-        width: 15rem;
-        height: 20rem;
+        width: 100%;
+        height: 30%;
     }
 
     .sidebar-item {
@@ -104,6 +115,7 @@
         background-size: cover;
         width: 100%;
         height: auto;
+        z-index: 10;
     
     }
     main {
@@ -149,7 +161,7 @@
         background-size: cover;
     }
     .project-three {
-        background: url('../pictures/img-slideshow.jpg') no-repeat;
+        background: url('../pictures/pearwagon.png') no-repeat;
         background-position: center;
         background-size: cover;
     }
@@ -164,6 +176,10 @@
     }
 
     #contact p {
+        margin-right: 0;
+    }
+
+    .contact-text-div {
         margin-right: 0;
     }
 
