@@ -29,11 +29,11 @@ function addEventListeners() {
 /** Function that open sidebar onclick */
 function openCloseSideBar() {
     let sideBlock = document.getElementById('sideBar');
-    if(sideBlock.style.width === 0 +'%') {
-        sideBlock.style.width = 50 +'%';
+    if(sideBlock.style.width == '50%') {
+        sideBlock.style.width = null;
 
     } else {
-        sideBlock.style.width = 0 +'%';
+        sideBlock.style.width = '50%';
     }
 }
 
