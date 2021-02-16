@@ -212,18 +212,18 @@ p {
     height: 100vh;
     background-color: black;
     border: 1px solid white;
-    transition: 0.5s ease-in-out;
+    transition: all 0.5s;
    
 }
 
 .project-one:hover {
-    background: url('../pictures/date-time.jpg') no-repeat;
+    background: url('../pictures/number-guesser.png') no-repeat;
     background-position: center;
     background-size: cover;
 
 }
 .project-two:hover {
-    background: url('../pictures/taxet-based-game.jpg') no-repeat;
+    background: url('../pictures/calender.png') no-repeat;
     background-position: center;
     background-size: cover;
 }
