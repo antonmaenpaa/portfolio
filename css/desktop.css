@@ -217,13 +217,13 @@ p {
 }
 
 .project-one:hover {
-    background: url('../pictures/number-guesser.png') no-repeat;
+    background: url('../pictures/number-guesser.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 
 }
 .project-two:hover {
-    background: url('../pictures/calender.png') no-repeat;
+    background: url('../pictures/calender.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
