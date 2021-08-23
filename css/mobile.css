@@ -150,7 +150,6 @@
     }
 
     .project-one {
-        /* background: url('../pictures/number-guesser.png') no-repeat; */
         background-color: black;
         background-position: center;
         background-size: cover;
@@ -160,13 +159,11 @@
     }
     .project-two {
         background-color: black;
-        /* background: url('../pictures/calender.png') no-repeat; */
         background-position: center;
         background-size: cover;
     }
     .project-three {
         background-color: black;
-        /* background: url('../pictures/pearwagon.png') no-repeat; */
         background-position: center;
         background-size: cover;
     }
@@ -176,9 +173,7 @@
 
     .palm-img {
         padding: 0;
-        width: 20rem;
-
-        
+        width: 20rem; 
     }
 
     #contact p {

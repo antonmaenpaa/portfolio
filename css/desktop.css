@@ -19,7 +19,6 @@ body {
 }
 
 .background {
-    /* background-image: url(../pictures/wallpaper-desktop.jpg); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,10 +76,6 @@ ul {
 
 nav {
     width: 25rem;
-    /* height: 3rem; */
-    /* margin-right: 1.5rem; */
-    
-
 }
 
 .social-media {
@@ -158,7 +153,6 @@ img.social-media:hover {
 }
 
 .infoMe {
-    /* margin: 0 4rem 4rem 4rem; */
     width: 80%;
     text-align: center;
     
@@ -184,6 +178,7 @@ p {
 
 .img-me-div {
     flex: 1;
+    z-index: -10;
 }
 
 .info-me-text {
@@ -234,7 +229,7 @@ p {
 
 }
 .project-two:hover {
-    background: url('../pictures/calender.jpg') no-repeat;
+    background: url('../pictures/triabygg.jpg') no-repeat;
     background-position: center;
     background-size: cover;
 }
@@ -264,7 +259,6 @@ p {
 
 .contact-div {
     text-align: center;
-    /* margin: 0 4rem 4rem 4rem; */
 }
 
 .content-width {

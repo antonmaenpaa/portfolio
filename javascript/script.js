@@ -2,13 +2,65 @@ window.addEventListener('load', main);
 
 function main() {
     addEventListeners();
+    gsap.from(".img-me-div", {
+
+        scrollTrigger: {
+            trigger: ".img-me-div",
+            toggleActions: "restart none none none"
+        },
+        duration: 1, 
+        opacity: 0, 
+        x: -300
+    });
+    gsap.from(".info-me-text", {
+
+        scrollTrigger: {
+            trigger: ".info-me-text",
+            toggleActions: "restart none none none"
+        },
+        duration: 1, 
+        opacity: 0, 
+        x: 300
+    });
+    gsap.from(".contact-text-div", {
+
+        scrollTrigger: {
+            trigger: ".contact-text-div",
+            toggleActions: "restart none none none"
+        },
+        duration: 1, 
+        opacity: 0, 
+        x: -300
+    });
+    gsap.from(".palm", {
+
+        scrollTrigger: {
+            trigger: ".palm",
+            toggleActions: "restart none none none"
+        },
+        duration: 1, 
+        opacity: 0, 
+        x: 300
+    });
+    
+
+
+    gsap.from(".a-project", {
+        scrollTrigger: {
+            trigger: ".a-project",
+            toggleActions: "restart none none none"
+        },
+        duration: 1,
+        opacity: 0,
+        y: 150,
+        stagger: 0.25,
+    })
 }
 
 /** Adds all addventliseteners in one function  */
 function addEventListeners() {
 
     const openMenu = document.getElementById('menu');
-    // const closeMenu = document.getElementById('close-menu');
     const sideLinks = document.getElementById('close');
     const sideLinks1 = document.getElementById('close1');
     const sideLinks2 = document.getElementById('close2');
@@ -19,7 +71,6 @@ function addEventListeners() {
     sideLinks2.onclick = closeSideBarWithLinks;
     sideLinks3.onclick = closeSideBarWithLinks;
     openMenu.onclick = openCloseSideBar;
-    // closeMenu.onclick = closeSideBar;
 
     
     window.addEventListener('scroll', changeHeaderBgOnScroll);
@@ -36,13 +87,6 @@ function openCloseSideBar() {
         sideBlock.style.width = '50%';
     }
 }
-
-/** Function that close sidebar onclick */
-// function closeSideBar() {
-//     let sideBlock = document.getElementById('sideMenu');
-//     sideBlock.style.width = '0';
-
-// }
 
 /** Function that close sidebar onclick on sidebar links */
 function closeSideBarWithLinks() {

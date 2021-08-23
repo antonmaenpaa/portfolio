@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/mobile.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dawning+of+a+New+Day&family=Parisienne&display=swap" rel="stylesheet">
+    
+    <script src="./javascript/gsap.min.js"></script>
+    <script src="./javascript/ScrollTrigger.min.js"></script>
     <script defer src="./javascript/script.js"></script>
     <title>Portfolio</title>
 </head>
@@ -50,9 +53,6 @@
 
     </header>
     <div id="sideBar">
-        <!-- <i id="close-menu" class="material-icons">
-            close
-        </i> -->
         <nav class="flex center centerHorizontal mobile-nav">
             <ul class="flex center centerHorizontal column ul-mobile">
                 <li class="sidebar-item"id="close"><a href="#home">Home.</a></li>
@@ -80,7 +80,7 @@
     <div id="aboutme" class="about flex center centerHorizontal column full-height">
         <div class="infoMe flex centerHorizontal column center">
             <div class="flex mobile-column tablet-column">
-                <div class="img-me-div">
+                <div data-aos="fade-right" class="img-me-div">
                     <img src="./pictures/me.jpg" class="picOfMe" alt="" srcset="">
                 </div>
                 <div class="info-me-text flex center column centerHorizontal">
@@ -113,10 +113,10 @@
 
                 </div>
             </a>
-            <a class="a-project" target="_blank" href="https://intradastingly.github.io/Calender-to-do/">
+            <a class="a-project" target="_blank" href="https://triabygg.fi">
                 <div class="project-two flex center centerHorizontal">
-                    <h2>Calender <br>
-                        School project</h2>
+                    <h2>Website for TRIABYGG<br>
+                        Consturction company</h2>
 
                 </div>
             </a>
@@ -144,7 +144,7 @@
                     antonmaenpaa@gmail.com
                 </p>
             </div>
-            <div>
+            <div class="palm">
                 <img class="palm-img" src="./pictures/plam-tree.jpeg" alt="" srcset="">
             </div>
         </div>
