@@ -2,26 +2,17 @@ window.addEventListener('load', main);
 
 function main() {
     addEventListeners();
-    gsap.from(".img-me-div", {
+    gsap.from(".img-me-div, .info-me-text", {
 
         scrollTrigger: {
-            trigger: ".img-me-div",
+            trigger: ".img-me-div, .info-me-text",
             toggleActions: "restart none none none"
         },
         duration: 1, 
         opacity: 0, 
-        x: -300
+        y: 150
     });
-    gsap.from(".info-me-text", {
 
-        scrollTrigger: {
-            trigger: ".info-me-text",
-            toggleActions: "restart none none none"
-        },
-        duration: 1, 
-        opacity: 0, 
-        x: 300
-    });
     gsap.from(".contact-text-div", {
 
         scrollTrigger: {
@@ -30,7 +21,7 @@ function main() {
         },
         duration: 1, 
         opacity: 0, 
-        x: -300
+        y: 150
     });
     gsap.from(".palm", {
 
@@ -40,7 +31,7 @@ function main() {
         },
         duration: 1, 
         opacity: 0, 
-        x: 300
+        y: 150
     });
     
 
@@ -51,9 +42,9 @@ function main() {
             toggleActions: "restart none none none"
         },
         duration: 1,
-        opacity: 0,
+        // opacity: 0,
         y: 150,
-        stagger: 0.25,
+        stagger: 0.1,
     })
 }
 
